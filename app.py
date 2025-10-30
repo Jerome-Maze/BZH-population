@@ -9,7 +9,7 @@ import altair as alt
 st.markdown("<h1 style='text-align: center;'>Population en BZH</h1>", unsafe_allow_html=True)
 
 # Image
-st.image("Data/Images/belle-ile.jpg")
+st.image("Data/images/Belle-ile.jpg")
 st.logo("Data/images/Bretagne-logo.png", size = "large")
 
 # Sidebar controls
