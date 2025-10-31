@@ -150,9 +150,8 @@ col1, col2, col3 = st.columns([1, 1, 1])  # Deux colonnes de largeur égale
 
 with col1:
     st.image("https://www.python.org/static/community_logos/python-powered-w-200x80.png", width=150)
-
 with col2:
-    st.image("Data\images\partipirate-bretagne.logowik.com.webp", width=150)
+    st.image("Data/images/partipirate-bretagne.logowik.com.webp", width=150)
 with col3:
     st.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=150)
 
