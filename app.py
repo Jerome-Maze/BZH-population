@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import altair as alt
 
 #st.title("Population en BZH",)
-# Pour affiche rle titre centré !
+
+# Pour afficher le titre centré !
 st.markdown("<h1 style='text-align: center;'>Population en BZH</h1>", unsafe_allow_html=True)
 
 # Image
@@ -24,7 +25,7 @@ choix_val = 0
 valid = st.button("Validez")
 
 if valid:
-    choix_val = choix
+    choix_val = choix   
 
 
 
@@ -136,3 +137,6 @@ elif choix_val == "Villes":
     st.pydeck_chart(r)
 
     st.write("Source des données : https://france.comersis.com/listes-des-villes-de-bretagne-105.html")
+
+# Logo Python en bas
+st.image("https://www.python.org/static/community_logos/python-powered-w-200x80.png", width=150)
