@@ -9,6 +9,12 @@ import altair as alt
 # Pour afficher le titre centré !
 st.markdown("<h1 style='text-align: center;'>Population en BZH</h1>", unsafe_allow_html=True)
 
+
+st.set_page_config(
+#    page_title="B R E T A G N E",
+    page_icon="🌊",
+)
+
 # Image
 st.image("Data/images/Belle-ile.jpg")
 st.logo("Data/images/Bretagne-logo.png", size = "large")
@@ -139,4 +145,15 @@ elif choix_val == "Villes":
     st.write("Source des données : https://france.comersis.com/listes-des-villes-de-bretagne-105.html")
 
 # Logo Python en bas
-st.image("https://www.python.org/static/community_logos/python-powered-w-200x80.png", width=150)
+st.markdown("<br><br>", unsafe_allow_html=True) 
+col1, col2, col3 = st.columns([1, 1, 1])  # Deux colonnes de largeur égale
+
+with col1:
+    st.image("https://www.python.org/static/community_logos/python-powered-w-200x80.png", width=150)
+
+with col2:
+    st.image("Data\images\partipirate-bretagne.logowik.com.webp", width=150)
+with col3:
+    st.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=150)
+
+st.markdown("<p style='text-align:center;'>Powered by Python & Streamlit 🚀</p>", unsafe_allow_html=True)
